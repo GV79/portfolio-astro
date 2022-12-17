@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/GV79/portfolio-astro/actions/workflows/main.yml/badge.svg)](https://github.com/GV79/portfolio-astro/actions/workflows/main.yml)
 
-This is the third iteration of my portfolio website now built using [Astro](https://astro.build/). The legacy Next.js version of my portfolio website is hosted in the following GitHub Repo: https://github.com/GV79/portfolio-new. Originally this repo was created just to play around with this new technology but there are also many benefits to this HTML-first approach such as better performance for end-users (smaller bundle size + less JS for the browser to parse & process). Any components with more interactivity were built with [Svelte](https://svelte.dev/);
+This is the third iteration of my portfolio website now built using [Astro](https://astro.build/). The legacy Next.js version of my portfolio website is hosted in the following GitHub Repo: https://github.com/GV79/portfolio-new. The goal of this repo is to learn more about `Astro` and gain benefits from its HTML-first philosophy (increase performance and reduce bundle size by only shipping JS when it's necessary). Any components with more interactivity were built using [Svelte](https://svelte.dev/).
 
 ## Getting Started
 
@@ -20,7 +20,7 @@ All commands are run from the root of the project, from a terminal:
 
 ## In progress
 
-1. 100% feature parity with existing Next.js portfolio site
+**1. Reach 100% feature parity with existing Next.js portfolio site**
 
 ## Todos
 

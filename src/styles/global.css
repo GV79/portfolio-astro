@@ -1,0 +1,81 @@
+/* Global CSS variables */
+:root {
+  /* Base Colors */
+  --c-black: #05091e;
+  --c-light-gray: #f8f8f8;
+  --c-gray: #767676;
+  --c-dark-gray: #4d4d4d;
+  --c-white: #fff;
+  --c-dark-blue: #115fb8;
+  --c-light-blue: #0070f3;
+
+  /* Text */
+  --t-primary: var(--c-dark-blue);
+  --t-secondary: var(--c-light-blue);
+  --t-fg: var(--c-black);
+  --t-bg: var(--c-white);
+  --t-subdue: var(--c-gray);
+  --t-active: var(--c-blue);
+
+  /* Background */
+  --bg-primary: var(--c-white);
+  --bg-secondary: var(--c-light-gray);
+}
+
+/* CSS Reset */
+html {
+  color-scheme: normal;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+body {
+  color: var(--t-fg);
+  font-family: 'Montserrat', 'system-ui', sans-serif;
+  min-height: 100vh;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Custom global styling and shared classes */
+a {
+  color: var(--t-active);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--f-u8);
+}
+
+p {
+  line-height: 1.5; /* for accessibility reasons */
+}
+
+.column-flex-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.centered-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

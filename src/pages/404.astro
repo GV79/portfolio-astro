@@ -1,0 +1,33 @@
+---
+import MainHead from '@components/MainHead.astro';
+
+import notFoundSvg from '/assets/error/404.svg';
+---
+
+<html lang='en'>
+  <head>
+    <MainHead title='Not Found' />
+  </head>
+  <body>
+    <div class='centered-container page-not-found-wrapper'>
+      <h1>Sorry! Page Not Found</h1>
+      <img src={notFoundSvg} alt='' />
+      <a href='/'>Return to Home</a>
+    </div>
+    <style>
+      h1 {
+        font-weight: 700;
+      }
+
+      a {
+        margin-top: 1rem;
+      }
+
+      .page-not-found-wrapper {
+        flex-direction: column;
+        padding: 2rem;
+        gap: 1rem;
+      }
+    </style>
+  </body>
+</html>

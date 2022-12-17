@@ -1,0 +1,27 @@
+---
+import MainContent from '@components/MainContent.svelte';
+import MainHead from '@components/MainHead.astro';
+import Intro from '@components/Intro.astro';
+import Projects from '@components/Projects.astro';
+import Skills from '@components/Skills.astro';
+---
+
+<html lang='en'>
+  <head>
+    <MainHead />
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <Intro />
+    <MainContent client:load>
+      <Projects slot='projects-tab' />
+      <Skills slot='skills-tab' />
+    </MainContent>
+  </body>
+</html>

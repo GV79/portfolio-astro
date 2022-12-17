@@ -1,0 +1,54 @@
+---
+import SocialMedia from '@components/SocialMedia.astro';
+
+import portfolioSvg from '/assets/intro/portfolio.svg';
+---
+
+<div class='container'>
+  <header>
+    <small>Bachelor's in Computer Engineering</small>
+    <h1>
+      Giavinh <span>Lam</span>
+    </h1>
+    <h2>Software Developer @ Vena</h2>
+  </header>
+  <div class='column-flex-container'>
+    <img alt='vector image of resume' src={portfolioSvg} width='742' height='751' />
+    <SocialMedia />
+  </div>
+</div>
+<style>
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 100%;
+    max-width: 36rem;
+    text-align: left;
+  }
+
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  h1 > span {
+    color: var(--t-secondary);
+  }
+
+  h2 {
+    font-size: 1.9rem;
+    color: var(--t-primary);
+    font-weight: 700;
+    margin-bottom: 4rem;
+  }
+
+  small {
+    display: block;
+    margin: 1rem 0 0.3rem 0;
+    color: var(--t-subdue);
+    font-size: 1rem;
+    text-transform: uppercase;
+  }
+</style>

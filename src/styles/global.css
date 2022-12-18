@@ -60,10 +60,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: var(--f-u8);
-}
-
 p {
   line-height: 1.5; /* for accessibility reasons */
 }

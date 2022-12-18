@@ -1,12 +1,14 @@
 ---
-import MainHead from '@components/MainHead.astro';
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
 
+import MainHead from '@components/MainHead.astro';
 import notFoundSvg from '/assets/error/404.svg';
 ---
 
 <html lang='en'>
   <head>
     <MainHead title='Not Found' />
+    <GoogleFontsOptimizer url='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' />
   </head>
   <body>
     <div class='centered-container page-not-found-wrapper'>

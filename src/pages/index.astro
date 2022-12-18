@@ -1,4 +1,6 @@
 ---
+import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
+
 import MainContent from '@components/MainContent.svelte';
 import MainHead from '@components/MainHead.astro';
 import Intro from '@components/Intro.astro';
@@ -9,6 +11,7 @@ import Skills from '@components/Skills.astro';
 <html lang='en'>
   <head>
     <MainHead />
+    <GoogleFontsOptimizer url='https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap' />
     <style>
       body {
         display: flex;

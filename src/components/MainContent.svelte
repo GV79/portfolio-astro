@@ -71,8 +71,8 @@
   }
 
   .option-wrapper > button.selected {
-    border-bottom: 2px solid #0070f3;
-    color: #0070f3;
+    border-bottom: 2px solid var(--t-secondary);
+    color: var(--t-secondary);
   }
 
   .option-wrapper > button:focus-visible {

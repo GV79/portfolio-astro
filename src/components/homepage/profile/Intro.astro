@@ -1,29 +1,39 @@
 ---
-import SocialMedia from '@components/SocialMedia.astro';
+import SocialMedia from '@components/homepage/profile/SocialMedia.astro';
 
 import portfolioSvg from '/assets/intro/portfolio.svg';
 ---
 
 <div class='container'>
-  <header>
-    <small>Bachelor's in Computer Engineering</small>
-    <h1>
-      Giavinh <span>Lam</span>
-    </h1>
-    <h2>Software Developer @ Vena</h2>
-  </header>
-  <div class='column-flex-container'>
-    <img alt='vector image of resume' src={portfolioSvg} width='742' height='751' />
-    <SocialMedia />
+  <div class='fixed-container'>
+    <header>
+      <small>Bachelor's in Computer Engineering</small>
+      <h1>
+        Giavinh <span>Lam</span>
+      </h1>
+      <h2>Software Developer @ Vena</h2>
+    </header>
+    <div class='column-flex-container'>
+      <img alt='vector image of resume' src={portfolioSvg} width='742' height='751' fetchpriority='high' />
+      <SocialMedia />
+    </div>
   </div>
 </div>
 <style>
   .container {
+    width: 36rem;
+    min-width: 36rem;
+  }
+
+  .fixed-container {
     display: flex;
     flex-direction: column;
+    position: fixed;
+
+    width: inherit;
+    height: 100%;
     padding: 2rem 3rem;
-    width: 100%;
-    max-width: 36rem;
+
     text-align: left;
   }
 

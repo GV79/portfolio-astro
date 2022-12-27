@@ -8,7 +8,7 @@
   $: currentTab = CONTENT.PROJECTS;
 </script>
 
-<div class="container">
+<main class="container">
   <div class="option-wrapper">
     <button type="button" class:selected={currentTab === CONTENT.SKILLS} on:click={() => (currentTab = CONTENT.SKILLS)}>
       {CONTENT.SKILLS}
@@ -27,7 +27,7 @@
   <div class={currentTab === CONTENT.SKILLS ? 'displayed' : 'hidden'}>
     <slot name="skills-tab" />
   </div>
-</div>
+</main>
 
 <style>
   .hidden {

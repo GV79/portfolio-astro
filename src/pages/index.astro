@@ -1,11 +1,11 @@
 ---
 import { GoogleFontsOptimizer } from 'astro-google-fonts-optimizer';
 
-import MainContent from '@components/MainContent.svelte';
-import MainHead from '@components/MainHead.astro';
-import Intro from '@components/Intro.astro';
-import Projects from '@components/Projects.astro';
-import Skills from '@components/Skills.astro';
+import MainHead from '@components/common/MainHead.astro';
+import Intro from '@components/homepage/profile/Intro.astro';
+import MainContent from '@components/homepage/portfolio/MainContent.svelte';
+import Projects from '@components/homepage/portfolio/Projects.astro';
+import Skills from '@components/homepage/portfolio/Skills.astro';
 ---
 
 <html lang='en'>
@@ -16,13 +16,12 @@ import Skills from '@components/Skills.astro';
       body {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
       }
     </style>
   </head>
   <body>
     <Intro />
-    <MainContent client:load>
+    <MainContent client:only='svelte'>
       <Projects slot='projects-tab' />
       <Skills slot='skills-tab' />
     </MainContent>

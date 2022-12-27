@@ -1,0 +1,33 @@
+---
+import { fetchProjects } from '@services/contentful';
+
+const projects = await fetchProjects();
+console.log(projects);
+// @TODO - implement row-sorted masonry grid with projects
+---
+
+<!-- <div class='masonry-grid'>
+  {
+    projects.map((project) => {
+      if (project.images.length === 0) {
+        return null;
+      }
+
+      return (
+        <img
+          src={project.images[0]?.url}
+          alt={`Screenshot of ${project.title} project`}
+          width={project.images[0]?.width}
+          height={project.images[0]?.height}
+          loading='lazy'
+        />
+      );
+    })
+  }
+</div> -->
+<style>
+  /* .masonry-grid {
+    column-count: 3;
+    column-gap: 2rem;
+  } */
+</style>

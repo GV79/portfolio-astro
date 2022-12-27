@@ -2,7 +2,9 @@
 
 [![CI](https://github.com/GV79/portfolio-astro/actions/workflows/main.yml/badge.svg)](https://github.com/GV79/portfolio-astro/actions/workflows/main.yml)
 
-This is the third iteration of my portfolio website now built using [Astro](https://astro.build/). The legacy Next.js version of my portfolio website is hosted in the following GitHub Repo: https://github.com/GV79/portfolio-new. The goal of this repo is to learn more about `Astro` and gain benefits from its HTML-first philosophy (increase performance and reduce bundle size by only shipping JS when it's necessary). Any components with more interactivity were built using [Svelte](https://svelte.dev/).
+This is the third iteration of my portfolio website now built using **[Astro](https://astro.build/)**. The legacy **Next.js** version of my portfolio website is hosted in the following GitHub Repo: https://github.com/GV79/portfolio-new.
+
+The goal of this repo is to learn more about `Astro` and benefit from its HTML-first philosophy (i.e. increase performance and reduce bundle size by only shipping JS when it's necessary). Any components with more interactivity were built using **[Svelte](https://svelte.dev/)**. For managing content, this site uses **[Contentful](https://www.contentful.com/)**, a headless CMS.
 
 ## Getting Started
 
@@ -24,13 +26,12 @@ All commands are run from the root of the project, from a terminal:
 
 ## Todos
 
-1. Integrate Headless CMS to easily add new projects (i.e. Contentful, Prismic, DatoCMS...)
+1. Add Playwright e2e tests https://docs.astro.build/en/guides/testing/
 2. Add GitHub actions (lint, type check, build, and run e2e tests)
-3. Add Playwright e2e tests https://docs.astro.build/en/guides/testing/
-4. Light/Dark Mode toggle + defaults via `prefers-color-scheme` setting
-5. Add old chat, socsreynolds, mrflatbeds, and form builder projects + fix image sizes
-6. Disabled buttons on featured projects page for mobile navs
-7. Filter (fixed icon for filtering projects by technology)
-8. Add simple animations/transitions?
-9. Small date badges beside projects (top right of title)
-10. Progressive web app for offline availability?
+3. Light/Dark Mode toggle + defaults via `prefers-color-scheme` setting
+4. Add old chat, socsreynolds, mrflatbeds, and form builder projects + fix image sizes
+5. Disabled buttons on featured projects page for mobile navs
+6. Filter (fixed icon for filtering projects by technology)
+7. Add simple animations/transitions?
+8. Small date badges beside projects (top right of title)
+9. Progressive web app for offline availability?
